@@ -1,0 +1,32 @@
+/* ================================================ */
+/* TOOLS - MIXINS */
+/* ================================================ */
+@mixin md-0(){
+    @media (max-width: 1500px){
+        @content;
+    }
+}
+
+@mixin md-0-A(){
+    @media (max-width: 1310px) {
+        @content;
+    }
+}
+
+@mixin md-1(){
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin md-2(){
+    @media (max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin md-3(){
+    @media (max-width: 780px) {
+        @content;
+    }
+}

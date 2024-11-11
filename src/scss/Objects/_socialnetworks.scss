@@ -1,0 +1,26 @@
+/* ================================================ */
+/* OBJECT - SOCIAL NETWORK */
+/* ================================================ */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: calc(36% - 90px);
+    left: calc(26% - 90px);
+
+    @include md-0 {
+        left: 150px;
+    }
+
+    @include md-0-A {
+        display: none;
+    }
+
+    &__button {
+        margin-bottom: 40px;
+
+
+    }
+}

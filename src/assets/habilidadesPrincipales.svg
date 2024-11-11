@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.21 27.34">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #a32fff;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: SugarCream, 'Sugar Cream';
+        font-size: 15.21px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 12.93)"><tspan x="0" y="0">Habili</tspan><tspan class="cls-6" x="27.02" y="0">d</tspan><tspan class="cls-5" x="33.32" y="0">a</tspan><tspan class="cls-1" x="37.8" y="0">d</tspan><tspan x="44.08" y="0">es</tspan></text>
+  <text class="cls-3" transform="translate(12.75 24.02) rotate(-1.63)"><tspan class="cls-4" x="0" y="0">P</tspan><tspan class="cls-5" x="8.5" y="0">rincipales</tspan></text>
+  <path class="cls-2" d="m8.35,18.32c-.43,2.17-1.17,4.23-1.97,6.28,0,0-.29-.65-.29-.65,1.95.73,3.87,1.53,5.69,2.61-2.09-.35-4.07-.98-6.03-1.67l-.48-.17c.88-2.2,1.81-4.37,3.09-6.39h0Z"/>
+  <path class="cls-2" d="m56.66,9.18c.59-2.13,1.47-4.14,2.43-6.12,0,0,.24.67.24.67-1.89-.87-3.75-1.81-5.48-3.02,2.06.5,3.99,1.27,5.89,2.11l.47.21c-1.04,2.13-2.13,4.23-3.55,6.14h0Z"/>
+</svg>

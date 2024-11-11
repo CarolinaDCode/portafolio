@@ -1,0 +1,144 @@
+/* ================================================ */
+/* COMPONENT - HOME */
+/* ================================================ */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+
+
+    @include md-1 {
+        margin: 140px 0 140px 0;
+    }
+}
+
+.elements {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @include md-1 {
+        margin: 0 0;
+    } 
+
+    @include md-3 {
+        margin: 0 0 20px 0;
+    }
+
+    &__lamp {
+        margin-left: 0;
+        @include md-3 {
+            display: none;
+        }
+    }
+
+    &__switch {
+        margin-left: 24rem;
+        @include md-3 {
+            margin-left: 0;
+        }
+    }
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+
+    @include md-1 {
+        margin-top: 50px;
+    } 
+
+    @include md-3 {
+        flex-direction: column-reverse;
+    }
+
+    &__paragraph {
+        width: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        margin-right: 150px;
+        font-family: "Raleway", sans-serif;
+
+        @include md-0 {
+            margin-right: 40px;
+        }
+
+        @include md-2 {
+            width: 430px;
+            margin-right: 20px;
+        }
+
+        @include md-3 {
+            width: 350px;
+            margin-top: 20px;
+            margin-left: calc(38% - 100px);
+            margin-right: 0;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 40pt;
+            line-height: 1;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            span {
+              font-weight: 800;
+              color: #FF9DA9;
+            }
+            @include md-3 {
+                font-size: 33pt;
+            }
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 20pt;
+            line-height: 1.3;
+            margin-right: 120px;
+
+            @include md-3 {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__fondofoto {
+        position: relative;
+    }
+
+    &__fondo {
+        right: 0px;
+        left: 55px;
+        bottom: 10px;
+
+        @include md-2 {
+            margin-top: 40px;
+        }
+    }
+
+    &__foto{
+        width: 175px;
+        position: absolute;
+        right: 0;
+        left: 58px;
+        bottom: 52px;
+        z-index: 2;
+
+        @include md-3 {
+            left: calc(50% - 85px);
+        }
+    }
+}
+
+.ornament{
+    @include md-3{
+        &_img{
+            width: 70%;
+        }
+    }
+}

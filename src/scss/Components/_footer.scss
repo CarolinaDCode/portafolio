@@ -1,0 +1,50 @@
+/* ================================================ */
+/* COMPONENT - FOOTER */
+/* ================================================ */
+.footer{
+    position: relative;
+    height: 50px;
+    background-color: #FF9DA9;
+    margin: 45px 0 0 0;
+
+    &__blockdivs{
+        display: flex;
+    }
+
+    &__circle{
+        position: relative;
+        float: left;
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        border-radius: 50px;
+        background: #FF9DA9;
+        // animation: footer-front 4s ease-in-out alternate infinite;
+
+        &:nth-child(2n){
+            background: #FF9DA9;
+        }
+    }
+
+    &__container{
+        height: 70px;
+        background-color: #FF9DA9;
+        position: relative;
+        z-index: 2;
+        padding-bottom: 30px;
+    }
+
+    &__txt{
+        place-self: center;
+        p{
+            color: #fff;
+            margin: 0 0 0 0;
+        }
+        span{
+            color: #fff;
+        }
+    }
+
+}
+
+//1316

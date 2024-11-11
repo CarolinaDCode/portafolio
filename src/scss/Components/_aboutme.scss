@@ -1,0 +1,77 @@
+/* ================================================ */
+/* COMPONENT - ABOUTME */
+/* ================================================ */
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+    &__title {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        img {
+            width: 20rem;
+        }
+    }
+
+    &__space {
+        width: 36rem;
+        @include md-0 {
+            width: 30rem
+        }
+        @include md-1(){
+            width: 25rem
+        }
+        @include md-3(){
+            display: none;
+        }
+    }
+
+    &__review {
+        display: flex;
+        width: 56rem;
+
+        @include md-0 {
+            width: 50rem
+        }
+        @include md-1(){
+            width: 44rem
+        }
+        @include md-3(){
+            width: 20rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__paragraphs {
+        text-align: left;
+
+        p:first-of-type{
+            margin-top: 3rem;
+        }
+
+        p {
+            font-family: "Raleway", sans-serif;
+            font-weight: 500;
+            font-size: 11pt;
+            color: #AAAAAA;
+        }
+    }
+
+    &__photo {
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+
+
+        img {
+          width: 16rem;
+        }
+    }
+}

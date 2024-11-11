@@ -1,0 +1,32 @@
+// SETTING
+@import "Settings/_settings";
+
+// TOOLS - (FUNCS - MIXINS)
+@import "Tools/_functions";
+@import "Tools/_mixins";
+
+// GENERIC
+@import "Generic/_generic";
+
+// TAGS
+@import "Tags/_tags";
+
+// OBJECTS
+@import "Objects/_socialnetworks";
+@import "Objects/_switch";
+
+// COMPONENTS
+@import "Components/_footer";
+@import "Components/_home";
+@import "Components/_navbar";
+@import "Components/_aboutme";
+@import "Components/_skills";
+@import "Components/_proyect";
+@import "Components/_contact";
+
+
+// GENERIC
+@import "Keyframes/_keyframes";
+
+// UTILITIES
+@import "Utilities/_utilities";
