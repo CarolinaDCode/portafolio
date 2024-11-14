@@ -7,20 +7,38 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: calc(36% - 90px);
-    left: calc(26% - 90px);
+    top: calc(42% - 90px);
+    list-style-type: none;
+    padding: 0;
 
-    @include md-0 {
-        left: 150px;
+    li{
+        margin-bottom: 20px;
+        margin-left: 0;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+            width: 35px;
+            padding: 5px;
+            border-radius: 50%;
+            font-size: 60px;
+            color: #FF9DA9;
+            transition: 0.5s ease;
+
+            &:hover{
+                transform: scale(1.2);
+                color: #FF9DA9;;
+                box-shadow: 0 0 40px #FF9DA9;;
+            }
+        }
     }
 
     @include md-0-A {
         display: none;
+        justify-content: center;
     }
 
-    &__button {
-        margin-bottom: 40px;
-
-
-    }
 }
+
+

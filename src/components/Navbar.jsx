@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import cv from '../assets/cvDianaCarhuamanta.pdf';
 import wavylines from '../assets/wavylines.svg';
 import heartIcon from '../assets/heart.svg';
+import { useThemeContext } from '../context/ThemeContext';
 
 const NavBar = () => {
     const [isHoveredHome, setIsHoveredHome] = useState(false);
@@ -13,6 +14,8 @@ const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const ulElement = useRef();
     const navRef = useRef();
+
+    const {contextTheme} = useThemeContext();
 
     const showNavbar = () => {
         setIsMenuOpen(prev => !prev);
@@ -48,7 +51,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className='navbar' ref={navRef}>
+            <nav className='navbar' ref={navRef} id={contextTheme==='Dark'?'Light':'Dark'}>
                 { isMenuOpen ? '': <span className='navbar__title'><img src="./src/assets/logo.gif"></img></span>}
                 <button className="navbar__buttonopen" onClick={showNavbar}>
                     {   isMenuOpen ? <svg className="navbar__svgclose" 

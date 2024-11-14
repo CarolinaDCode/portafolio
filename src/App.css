@@ -39,4 +39,18 @@
   color: #888;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#Dark {
+  background-color: #1a032f;
+  background: #1a032f;
+}
+
+#Light {
+  background-color: #ffffff;
+}
+
 

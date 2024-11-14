@@ -4,6 +4,8 @@ import photo from '../assets/foto_diana.webp'
 const Aboutme = () => {
     return (
         <div id='aboutme' className="aboutme">
+            <div className="aboutme__spacemenu">
+            </div>
             <div className="aboutme__title">
                 <img src={title} />
                 <div className="aboutme__space">

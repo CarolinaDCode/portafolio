@@ -6,6 +6,8 @@ import imagen from '../assets/fondo_.jpg';
 const Projects = () => {
     return (
         <div id='projects' className='projects'>
+            <div className="projects__spacemenu">
+            </div>
             <img src={proyectos} className='projects__title'/>
             <div className='projects__container'>
                 <div className='projects__card projects__card--block'>

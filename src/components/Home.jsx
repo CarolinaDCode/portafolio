@@ -1,12 +1,13 @@
-import SocialIcons from './SocialNetworks';
+import Switch from './objects/Switch';
 import shelf from '../assets/shelf.svg';
 import foto from '../assets/foto.png';
 
-const Home = () => {
+const Home = ({ sendContextThemeToParent }) => {
+
     return (
         <div id='home' className='home'>
-            <SocialIcons/>
             <div>
+                <div className='home__spacemenu'></div>
                 <div className='elements'>
                     <div className='elements__lamp'>
                         <svg width="136" height="98" viewBox="0 0 136 98" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,34 +22,32 @@ const Home = () => {
                                 <path d="M128.466 89.4993C128.466 93.2308 116.753 96.8114 68.4815 96.8114C20.2101 96.8114 7.53845 93.2308 7.53845 89.4993C7.53845 86.0161 20.2101 82.1871 68.4815 82.1871C116.753 82.1871 128.466 86.021 128.466 89.4993Z" fill="#FFFBDC" />
                             </g>
                             <defs>
-                            <linearGradient id="paint0_linear_73_56" x1="67.9389" y1="-0.696625" x2="67.9389" y2="12.8169" gradientUnits="userSpaceOnUse">
-                                <stop offset="0.17" stopColor="#939393" stopOpacity="0" />
-                                <stop offset="0.26" stopColor="#939393" stopOpacity="0.22" />
-                                <stop offset="0.39" stopColor="#939393" stopOpacity="0.49" />
-                                <stop offset="0.49" stopColor="#939393" stopOpacity="0.66" />
-                                <stop offset="0.55" stopColor="#939393" stopOpacity="0.72" />
-                            </linearGradient>
-                            <linearGradient id="paint1_linear_73_56" x1="46.7119" y1="25.8385" x2="93.5312" y2="27.1484" gradientUnits="userSpaceOnUse">
-                                <stop stopColor="#F29BA9" />
-                                <stop offset="1" stopColor="#FDEDEF" />
-                            </linearGradient>
-                            <linearGradient id="paint2_linear_73_56" x1="19.4963" y1="56.3925" x2="154.133" y2="75.6461" gradientUnits="userSpaceOnUse">
-                                <stop offset="0.19" stopColor="#F29BA9" />
-                                <stop offset="1" stopColor="#FDEDEF" />
-                            </linearGradient>
-                            <clipPath id="clip0_73_56">
-                                <rect width="136" height="98" fill="white" />
-                            </clipPath>
+                                <linearGradient id="paint0_linear_73_56" x1="67.9389" y1="-0.696625" x2="67.9389" y2="12.8169" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.17" stopColor="#939393" stopOpacity="0" />
+                                    <stop offset="0.26" stopColor="#939393" stopOpacity="0.22" />
+                                    <stop offset="0.39" stopColor="#939393" stopOpacity="0.49" />
+                                    <stop offset="0.49" stopColor="#939393" stopOpacity="0.66" />
+                                    <stop offset="0.55" stopColor="#939393" stopOpacity="0.72" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_73_56" x1="46.7119" y1="25.8385" x2="93.5312" y2="27.1484" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#F29BA9" />
+                                    <stop offset="1" stopColor="#FDEDEF" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_73_56" x1="19.4963" y1="56.3925" x2="154.133" y2="75.6461" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.19" stopColor="#F29BA9" />
+                                    <stop offset="1" stopColor="#FDEDEF" />
+                                </linearGradient>
+                                <clipPath id="clip0_73_56">
+                                    <rect width="136" height="98" fill="white" />
+                                </clipPath>
                             </defs>
+
                         </svg>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328.78 320.45" className="elements__light">
+                            <polygon className="elements__polygon" points="191.27 0 134.24 0 0 320.45 328.78 320.45 191.27 0"/>
+                        </svg> */}
                     </div>
-                    <div className='elements__switch'>
-                        <label className="switch js-night-toggle">
-                            <input className="switch__checkbox js-night-checkbox" type="checkbox" />
-                            <span className="switch__toggle">
-                            </span>
-                        </label>
-                    </div>
+                    <Switch sendContextThemeToParent={sendContextThemeToParent}/>
                 </div>
                 <div className='profile'>
                     <div className='profile__paragraph'>

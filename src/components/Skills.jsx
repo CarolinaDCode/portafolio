@@ -33,6 +33,8 @@ const Skills = () => {
     return (
         <div id='skills' className='skills'>
             <div className='skills__left'>
+                <div className="skills__spacemenu">
+                </div>
                 <div className='skills__title'>
                     <img src={mainSkills} />
                     <div className='skills__top skills__top--left '>
@@ -105,6 +107,8 @@ const Skills = () => {
             </div>
             <div className='skills__right'>
                 <div className='skills__title'>
+                    <div className="skills__spacemenu">
+                    </div>
                     <img src={secondarySkills} />
                     <div className='skills__top skills__top--right'>
                         <h1>TECNOLOGIAS</h1>
