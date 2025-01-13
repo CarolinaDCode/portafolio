@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
-import cv from '../assets/cvDianaCarhuamanta.pdf';
+import cv from '../assets/cvCarolinaCarhuamanta_v2.pdf';
 import wavylines from '../assets/wavylines.svg';
 import heartIcon from '../assets/heart.svg';
 import { useThemeContext } from '../context/ThemeContext';
