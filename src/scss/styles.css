@@ -1755,7 +1755,8 @@ template {
   transition: 0.2s;
 }
 .projects__cardinfo h1 {
-  font-size: 14pt;
+  font-family: var(--font-subtitle-semibold);
+  font-size: 13pt;
   color: #fff;
   margin: 0;
   line-height: 40px;
