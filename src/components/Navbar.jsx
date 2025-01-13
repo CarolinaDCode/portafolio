@@ -54,7 +54,7 @@ const NavBar = () => {
     return (
         <div>
             <nav className='navbar' ref={navRef} id={contextTheme==='Dark'?'':'Dark'}>
-                { isMenuOpen ? '': <span className='navbar__title'><img src="../assets/logo.png"></img></span>}
+                { isMenuOpen ? '': <span className='navbar__title'><img src="/assets/logo.png" alt="Logo"></img></span>}
                 <button className="navbar__buttonopen" onClick={showNavbar}>
                     {   isMenuOpen ? <svg className="navbar__svgclose" 
                                           xmlns="http://www.w3.org/2000/svg"
