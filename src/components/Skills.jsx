@@ -1,169 +1,432 @@
-import mainSkills from '../assets/habilidadesPrincipales.svg';
-import secondarySkills from '../assets/habilidadesSecundarias.svg';
-import js from '../assets/icon_lenguages/js_color.webp';
-import react from '../assets/icon_lenguages/react_color.webp';
-import git from '../assets/icon_lenguages/git_color.webp';
-import emotion from '../assets/icon_lenguages/emotion_color.webp';
-import nodejs from '../assets/icon_lenguages/nodejs_color.webp';
-import github from '../assets/icon_lenguages/github_color.webp';
-import mongo from '../assets/icon_lenguages/mongo_color.webp';
-import php from '../assets/icon_lenguages/php_color.webp';
-import postman from '../assets/icon_lenguages/postman_color.webp';
+import js from '../assets/icon_lenguages/js_grises.webp';
+import react from '../assets/icon_lenguages/react_gris.webp';
+import git from '../assets/icon_lenguages/git_gris.webp';
+import github from '../assets/icon_lenguages/github_gris.webp';
+import mongo from '../assets/icon_lenguages/mongodb_gris.webp';
+import php from '../assets/icon_lenguages/php_gris.webp';
+import postman from '../assets/icon_lenguages/postman_gris.webp';
 
-import python from '../assets/icon_lenguages/python_color.webp';
-import sql from '../assets/icon_lenguages/sql_sever_color.webp';
-import mysql from '../assets/icon_lenguages/mysql_color.webp';
-import css from '../assets/icon_lenguages/css_color.webp';
-import bootstrap from '../assets/icon_lenguages/bootstrap_color.webp';
-import materialui from '../assets/icon_lenguages/materialui_color.webp';
-import vuejs from '../assets/icon_lenguages/vuejs-color.webp';
-import vuetify from '../assets/icon_lenguages/vuetify-color.webp';
+import python from '../assets/icon_lenguages/python_gris.webp';
+import sql from '../assets/icon_lenguages/sql_sever_gris.webp';
+import mysql from '../assets/icon_lenguages/mysql_gris.webp';
+import css from '../assets/icon_lenguages/css_gris.webp';
+import materialui from '../assets/icon_lenguages/materialui_gris.webp';
+import vuejs from '../assets/icon_lenguages/vuejs_gris.webp';
+import vuetify from '../assets/icon_lenguages/vuetify_gris.webp';
 
-import illustrator from '../assets/icon_lenguages/ai_color.webp';
-import photoshop from '../assets/icon_lenguages/ps_color.webp';
-import afterEffects from '../assets/icon_lenguages/ae_color.webp';
-import Indesing from '../assets/icon_lenguages/id_color.webp';
-import figma from '../assets/icon_lenguages/figma_color.webp';
+import illustrator from '../assets/icon_lenguages/ai_gris.webp';
+import photoshop from '../assets/icon_lenguages/ps_gris.webp';
+import typeScript from '../assets/icon_lenguages/ts_gris.webp';
+import figma from '../assets/icon_lenguages/figma_gris.webp';
 
-import windows from '../assets/icon_lenguages/windows_color.webp';
-import linux from '../assets/icon_lenguages/linux_color.webp';
-import macos from '../assets/icon_lenguages/macos_color.webp';
+import html from '../assets/icon_lenguages/html_gris.webp';
+import sass from '../assets/icon_lenguages/sass_gris.webp';
+import java from '../assets/icon_lenguages/java_gris.webp';
+import docker from '../assets/icon_lenguages/docker_gris.webp';
+import balsamiq from '../assets/icon_lenguages/balsamiq_gris.webp';
+
+import { useThemeContext } from '../context/ThemeContext';
 
 const Skills = () => {
+    const {contextTheme} = useThemeContext();
+
     return (
         <div id='skills' className='skills'>
-            <div className='skills__left'>
-                <div className="skills__spacemenu">
+            <div className="skills__space"></div>
+            <span>Tecnologías de Desarrollo ⚙️</span>
+            <div className='skills__webDeveloper'>
+                <h3>Desarrollo Web</h3>
+                <div className='skills__webItems'>
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--react' src={react} />
+                        </div>
+                        <h4>React</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '70%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--vue' src={vuejs} />
+                        </div>
+                        <h4>Vue</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '40%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--javaScript' src={js} />
+                        </div>
+                        <h4>JavaScript</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '60%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--typeScript' src={typeScript} />
+                        </div>
+                        <h4>TypeScript</h4>
+                        <span>Principiante</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '15%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--html' src={html} />
+                        </div>
+                        <h4>HTML</h4>
+                        <span>avanzado</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '80%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--css' src={css} />
+                        </div>
+                        <h4>CSS</h4>
+                        <span>avanzado</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '80%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--sass' src={sass} />
+                        </div>
+                        <h4>SASS</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '50%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--vuetify' src={vuetify} />
+                        </div>
+                        <h4>Vuetify</h4>
+                        <span>basico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '20%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--materialui' src={materialui} />
+                        </div>
+                        <h4>Material UI</h4>
+                        <span>basico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '20%' }}></div>
+                        </div>
+                    </div>
+
                 </div>
-                <div className='skills__title'>
-                    <img src={mainSkills} />
-                    <div className='skills__top skills__top--left '>
-                        <h1>TECNOLOGIAS</h1>
-                        <div className='skills__block skills__block--lefttop'>
-                            <div className='skills__element'>
-                                <img src={js} />
-                                <span>JavaScript</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={react} />
-                                <span>React Js</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={git} />
-                                <span>Git</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={emotion} />
-                                <span>Emotion</span>
-                            </div>
-                            <div className='skills__element skills__element--sizenode'>
-                                <img src={nodejs} />
-                                <span>Node Js</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={github} />
-                                <span>Github</span>
-                            </div>
-                            <div className='skills__element skills__element--sizemongo'>
-                                <img src={mongo} />
-                                <span>Mongo DB</span>
-                            </div>
-                            <div className='skills__element skills__element--sizephp'>
-                                <img src={php} />
-                                <span>PHP</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={postman} />
-                                <span>Postman</span>
-                            </div>
+
+                <h3>Backend</h3>
+                <div className='skills__webItems'>
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--php' src={php} />
+                        </div>
+                        <h4>PHP</h4>
+                        <span>básico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '30%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--python' src={python} />
+                        </div>
+                        <h4>Python</h4>
+                        <span>Básico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '30%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--java' src={java} />
+                        </div>
+                        <h4>Java</h4>
+                        <span>Principiante</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '15%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--sql' src={sql} />
+                        </div>
+                        <h4>SQL Server</h4>
+                        <span>Básico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '25%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--mysql' src={mysql} />
+                        </div>
+                        <h4>MySQL</h4>
+                        <span>Básico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '25%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--mongoDB' src={mongo} />
+                        </div>
+                        <h4>MongoDB</h4>
+                        <span>Básico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '25%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--postman' src={postman} />
+                        </div>
+                        <h4>Postman</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '45%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--docker' src={docker} />
+                        </div>
+                        <h4>Docker</h4>
+                        <span>Principiante</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '10%' }}></div>
                         </div>
                     </div>
                 </div>
-                <div className='skills__bottom skills__bottom--design'>
-                    <h1>DISEÑO</h1>
-                    <div className='skills__block skills__block--leftbottom'>
-                        <div className='skills__element'>
-                            <img src={illustrator} />
-                            <span>Illustrator</span>
+
+                <h3>UX/UI Design</h3>
+                <div className='skills__webItems'>
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--figma' src={figma} />
                         </div>
-                        <div className='skills__element'>
-                            <img src={photoshop} />
-                            <span>Photoshop</span>
+                        <h4>Figma</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '70%' }}></div>
                         </div>
-                        <div className='skills__element'>
-                            <img src={afterEffects} />
-                            <span>After Effects</span>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--photoshop' src={photoshop} />
                         </div>
-                        <div className='skills__element'>
-                            <img src={Indesing} />
-                            <span>Indesing</span>
+                        <h4>Photoshop</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '70%' }}></div>
                         </div>
-                        <div className='skills__element'>
-                            <img src={figma} />
-                            <span>Figma</span>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--illustrator' src={illustrator} />
+                        </div>
+                        <h4>Illustrator</h4>
+                        <span>Avanzado</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '90%' }}></div>
+                        </div>
+                    </div>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--balsamiq' src={balsamiq} />
+                        </div>
+                        <h4>Balsamiq</h4>
+                        <span>Principiante</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '10%' }}></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='skills__right'>
-                <div className='skills__title'>
-                    <div className="skills__spacemenu">
-                    </div>
-                    <img src={secondarySkills} />
-                    <div className='skills__top skills__top--right'>
-                        <h1>TECNOLOGIAS</h1>
-                        <div className='skills__block skills__block--righttop'>
-                            <div className='skills__element'>
-                                <img src={python} />
-                                <span>Python</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={sql} />
-                                <span>Sql Server</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={mysql} />
-                                <span>MySQL</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={css} />
-                                <span>CSS</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={bootstrap} />
-                                <span>Bootstrap</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={materialui} />
-                                <span>Material UI</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={vuejs} />
-                                <span>Vue Js</span>
-                            </div>
-                            <div className='skills__element'>
-                                <img src={vuetify} />
-                                <span>Vuetify</span>
-                            </div>
+        
+                <h3>Sistemas de Version</h3>
+                <div className='skills__webItems'>
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--git' src={git} />
+                        </div>
+                        <h4>Git</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '70%' }}></div>
                         </div>
                     </div>
-                </div>
-                <div className='skills__bottom skills__bottom--opsy'>
-                    <h1>SISTEMAS OPERATIVOS</h1>
-                    <div className='skills__block skills__block--rightbottom'>
-                        <div className='skills__element skills__element--sizedesign'>
-                            <img src={windows} />
-                            <span>Windows</span>
+
+                    <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            { contextTheme === 'Dark' ?
+                                (<div className='skills__bloque--blur'></div> ):
+                                (<div className='skills__bloque--blurDark'></div>)
+                            }
+                            <img className='skills__bloque--github' src={github} />
                         </div>
-                        <div className='skills__element skills__element--sizedesign'>
-                            <img src={linux} />
-                            <span>Linux</span>
-                        </div>
-                        <div className='skills__element skills__element--sizedesign'>
-                            <img src={macos} />
-                            <span>MacOS</span>
+                        <h4>Github</h4>
+                        <span>Intermedio</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '70%' }}></div>
                         </div>
                     </div>
+
+                    {/* <div className='skills__bloque'>
+                        <div className='skills__bloque--icon'>
+                            <div className='skills__bloque--blur' ></div>
+                            <img className='skills__bloque--vercel' src={react} />
+                        </div>
+                        <h4>Vercel</h4>
+                        <span>Básico</span>
+                        <div className='skills__grade'>
+                            <div className='skills__grade--background'></div>
+                            <div className='skills__grade--porcent' style={{ width: '70%' }}></div>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </div>

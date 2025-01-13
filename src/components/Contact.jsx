@@ -73,57 +73,57 @@ const Contact = () => {
         el.style.transform = `translate(${distanceLeft / xRel}px, ${distanceTop / yRel}px)`;
     };
 
-    const seguir = () =>{
-        if (eyelashestailRightRef.current) seguirCursor(eyelashestailRightRef.current, 15, 15);
-        if (eyelashesRightRef.current) seguirCursor(eyelashesRightRef.current, 25, 25);
-        if (eyeRightRef.current) seguirCursor(eyeRightRef.current, 25, 25);
+    // const seguir = () =>{
+    //     if (eyelashestailRightRef.current) seguirCursor(eyelashestailRightRef.current, 15, 15);
+    //     if (eyelashesRightRef.current) seguirCursor(eyelashesRightRef.current, 25, 25);
+    //     if (eyeRightRef.current) seguirCursor(eyeRightRef.current, 25, 25);
 
-        if (irisRightRef.current) seguirCursor(irisRightRef.current, 25, 25);
-        if (pupilRightRef.current) seguirCursor(pupilRightRef.current, 25, 25);
-        if (glowRightRef.current) seguirCursor(glowRightRef.current, 25, 25);
-        if (blushRightRef.current) seguirCursor(blushRightRef.current, 15, 15);
-        if (eyebrowRightRef.current) seguirCursor(eyebrowRightRef.current, 15, 15);
-        if (shadeRightRef.current) seguirCursor(shadeRightRef.current, 15, 15);
-        if (shadeLeftRef.current) seguirCursor(shadeLeftRef.current, 15, 15);
-        if (earRight.current) seguirCursor(earRight.current, 15, 15);
-        if (hairRight.current) seguirCursor(hairRight.current, 15, 15);
+    //     if (irisRightRef.current) seguirCursor(irisRightRef.current, 25, 25);
+    //     if (pupilRightRef.current) seguirCursor(pupilRightRef.current, 25, 25);
+    //     if (glowRightRef.current) seguirCursor(glowRightRef.current, 25, 25);
+    //     if (blushRightRef.current) seguirCursor(blushRightRef.current, 15, 15);
+    //     if (eyebrowRightRef.current) seguirCursor(eyebrowRightRef.current, 15, 15);
+    //     if (shadeRightRef.current) seguirCursor(shadeRightRef.current, 15, 15);
+    //     if (shadeLeftRef.current) seguirCursor(shadeLeftRef.current, 15, 15);
+    //     if (earRight.current) seguirCursor(earRight.current, 15, 15);
+    //     if (hairRight.current) seguirCursor(hairRight.current, 15, 15);
 
-        if (faceRef.current) seguirCursor(faceRef.current, 15, 15);
-        if (noseRef.current) seguirCursor(noseRef.current, 15, 15);
+    //     if (faceRef.current) seguirCursor(faceRef.current, 15, 15);
+    //     if (noseRef.current) seguirCursor(noseRef.current, 15, 15);
 
-        if (eyelashestailLeftRef.current) seguirCursor(eyelashestailLeftRef.current, 25, 25);
-        if (eyelashesLeftRef.current) seguirCursor(eyelashesLeftRef.current, 15, 15);
-        if (eyeLeftRef.current) seguirCursor(eyeLeftRef.current, 25, 25);
+    //     if (eyelashestailLeftRef.current) seguirCursor(eyelashestailLeftRef.current, 25, 25);
+    //     if (eyelashesLeftRef.current) seguirCursor(eyelashesLeftRef.current, 15, 15);
+    //     if (eyeLeftRef.current) seguirCursor(eyeLeftRef.current, 25, 25);
 
-        if (irisLeftRef.current) seguirCursor(irisLeftRef.current, 25, 25);
-        if (pupilLeftRef.current) seguirCursor(pupilLeftRef.current, 25, 25);
-        if (glowLeftRef.current) seguirCursor(glowLeftRef.current, 25, 25);
-        if (blushLeftRef.current) seguirCursor(blushLeftRef.current, 15, 15);
-        if (eyebrowLeftRef.current) seguirCursor(eyebrowLeftRef.current, 15, 15);
-        if (shadeLeftRef.current) seguirCursor(shadeLeftRef.current, 15, 15);
-        if (earLeft.current) seguirCursor(earLeft.current, 15, 15);
+    //     if (irisLeftRef.current) seguirCursor(irisLeftRef.current, 25, 25);
+    //     if (pupilLeftRef.current) seguirCursor(pupilLeftRef.current, 25, 25);
+    //     if (glowLeftRef.current) seguirCursor(glowLeftRef.current, 25, 25);
+    //     if (blushLeftRef.current) seguirCursor(blushLeftRef.current, 15, 15);
+    //     if (eyebrowLeftRef.current) seguirCursor(eyebrowLeftRef.current, 15, 15);
+    //     if (shadeLeftRef.current) seguirCursor(shadeLeftRef.current, 15, 15);
+    //     if (earLeft.current) seguirCursor(earLeft.current, 15, 15);
 
-        if (toplips.current) seguirCursor(toplips.current, 15, 15);
-        if (bottomlips.current) seguirCursor(bottomlips.current, 15, 15);
-        if (lipLine.current) seguirCursor(lipLine.current, 15, 15);
-        if (rightLock.current) seguirCursor(rightLock.current, 15, 15);
-        if (leftLock.current) seguirCursor(leftLock.current, 15, 15);
-        if (littleLock.current) seguirCursor(littleLock.current, 15, 15);
-        if (earRight.current) seguirCursor(earRight.current, 15, 15);
-        if (hairLeft.current) seguirCursor(hairLeft.current, 15, 15);
-    };
+    //     if (toplips.current) seguirCursor(toplips.current, 15, 15);
+    //     if (bottomlips.current) seguirCursor(bottomlips.current, 15, 15);
+    //     if (lipLine.current) seguirCursor(lipLine.current, 15, 15);
+    //     if (rightLock.current) seguirCursor(rightLock.current, 15, 15);
+    //     if (leftLock.current) seguirCursor(leftLock.current, 15, 15);
+    //     if (littleLock.current) seguirCursor(littleLock.current, 15, 15);
+    //     if (earRight.current) seguirCursor(earRight.current, 15, 15);
+    //     if (hairLeft.current) seguirCursor(hairLeft.current, 15, 15);
+    // };
 
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('mousemove', handleMouseMove);
-        window.addEventListener('touchmove', handleTouchMove);
+    // useEffect(() => {
+    //     window.addEventListener('resize', handleResize);
+    //     window.addEventListener('mousemove', handleMouseMove);
+    //     window.addEventListener('touchmove', handleTouchMove);
     
-        return () => {
-          window.removeEventListener('resize', handleResize);
-          window.removeEventListener('mousemove', handleMouseMove);
-          window.removeEventListener('touchmove', handleTouchMove);
-        };
-    }, [cursorPos, windowDimensions]);
+    //     return () => {
+    //       window.removeEventListener('resize', handleResize);
+    //       window.removeEventListener('mousemove', handleMouseMove);
+    //       window.removeEventListener('touchmove', handleTouchMove);
+    //     };
+    // }, [cursorPos, windowDimensions]);
 
     return (
         <div id='contact' className='contact'>

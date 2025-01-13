@@ -51,23 +51,22 @@ const Home = ({ sendContextThemeToParent }) => {
                 </div>
                 <div className='profile'>
                     <div className='profile__paragraph'>
-                        <h1>
-                            Hola, mi nombre es <span>Diana.</span> <br/>
-                        </h1>
-                        <h2>
-                            Soy desarrolladora y diseñadora 
-                            me encanta la ilustración, animación y
-                            realizar cosas interactivas.
-                        </h2>
+                        <h1>!Hola! Soy <span>Diana.</span></h1>
+                        <h2>&lt;Full Stack Developer Jr./&gt;</h2> 
+                        {/* <h2></h2>  */}
+                        <h3>con pasión por el Frontend ❤️</h3>
+                        <h4>
+                            Me especializo en crear interfaces atractivas e interactivas, y disfruto especialmente del diseño visual, la animación y la experiencia del usuario. Me encanta trabajar en equipo para dar vida a proyectos innovadores que conecten con las personas. Actualmente, estoy ampliando mis conocimientos en UX/UI Design para ofrecer soluciones aún más completas y centradas en el usuario.
+                        </h4>
                     </div>
                     <div className='profile__fondofoto'>
                         <svg className='profile__fondo' width="276" height="276" viewBox="0 0 276 276" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.2" d="M138 276C214.215 276 276 214.215 276 138C276 61.7847 214.215 0 138 0C61.7847 0 0 61.7847 0 138C0 214.215 61.7847 276 138 276Z"
-                                fill="#A32FFF"/>
+                                fill="var(--color-secondarycolor)"/>
                             <path opacity="0.4" d="M138 253.002C201.514 253.002 253.002 201.514 253.002 138C253.002 74.486 201.514 22.9978 138 22.9978C74.486 22.9978 22.9978 74.486 22.9978 138C22.9978 201.514 74.486 253.002 138 253.002Z"
-                                fill="#A32FFF"/>
+                                fill="var(--color-secondarycolor)"/>
                             <path d="M138 228.466C187.963 228.466 228.466 187.963 228.466 138C228.466 88.037 187.963 47.5341 138 47.5341C88.037 47.5341 47.5341 88.037 47.5341 138C47.5341 187.963 88.037 228.466 138 228.466Z"
-                                fill="#A32FFF"/>
+                                fill="var(--color-secondarycolor)"/>
                         </svg>
                         <img className='profile__foto' src={foto}/>
                     </div>

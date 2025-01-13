@@ -16,6 +16,7 @@ const NavBar = () => {
     const navRef = useRef();
 
     const {contextTheme} = useThemeContext();
+    const [newColorTheme, setNewColorTheme] = useState(false);
 
     const showNavbar = () => {
         setIsMenuOpen(prev => !prev);
@@ -47,12 +48,13 @@ const NavBar = () => {
 
     const handleLinkClick = () => {
         setIsMenuOpen(false);
-    };
+    }; 
+
 
     return (
         <div>
-            <nav className='navbar' ref={navRef} id={contextTheme==='Dark'?'Light':'Dark'}>
-                { isMenuOpen ? '': <span className='navbar__title'><img src="./src/assets/logo.gif"></img></span>}
+            <nav className='navbar' ref={navRef} id={contextTheme==='Dark'?'':'Dark'}>
+                { isMenuOpen ? '': <span className='navbar__title'><img src="./src/assets/logo.png"></img></span>}
                 <button className="navbar__buttonopen" onClick={showNavbar}>
                     {   isMenuOpen ? <svg className="navbar__svgclose" 
                                           xmlns="http://www.w3.org/2000/svg"
@@ -74,14 +76,14 @@ const NavBar = () => {
                 <ul className={`navbar__list ${isMenuClosed ? 'navbar__list--closed' : 'navbar__list'}`} ref={ulElement}>
                     <li className={isMenuClosed ? 'li--closed' : ''} onMouseEnter={() => setIsHoveredHome(true)} onMouseLeave={() => setIsHoveredHome(false)} >
                         <div className='navbar__container'>
-                            <a href='#home' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>HOME</a>
+                            <a href='#home' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>Home</a>
                             {isHoveredHome && <img className="navbar__listitemsub" src={heartIcon} alt="Heart Icon"></img>}
                         </div>
                         {isHoveredHome && <img className="navbar__listitemsub" src={wavylines} alt="Wavy Lines"></img>}
                     </li>
                     <li className={isMenuClosed ? 'li--closed' : ''} onMouseEnter={() => setIsHoveredAboutme(true)} onMouseLeave={() => setIsHoveredAboutme(false)} >
                         <div className='navbar__container'>
-                            <a href='#aboutme' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>ACERCA DE MÍ</a>
+                            <a href='#aboutme' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>Experiencia</a>
 
                             {isHoveredAboutme && <img className="navbar__listitemsub" src={heartIcon}></img>}
                         </div>
@@ -89,7 +91,7 @@ const NavBar = () => {
                     </li>
                     <li className={isMenuClosed ? 'li--closed' : ''} onMouseEnter={() => setIsHoveredSkills(true)} onMouseLeave={() => setIsHoveredSkills(false)} >
                         <div className='navbar__container'>
-                            <a href='#skills' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>HABILIDADES</a>
+                            <a href='#skills' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>Habilidades</a>
 
                             {isHoveredSkills && <img className="navbar__listitemsub" src={heartIcon}></img>}
                         </div>
@@ -98,7 +100,7 @@ const NavBar = () => {
 
                     <li className={isMenuClosed ? 'li--closed' : ''} onMouseEnter={() => setIsHoveredProyect(true)} onMouseLeave={() => setIsHoveredProyect(false)} >
                         <div className='navbar__container'>
-                            <a href='#projects' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>PROYECTOS</a>
+                            <a href='#projects' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>Proyectos</a>
 
                             {isHoveredProyect && <img className="navbar__listitemsub" src={heartIcon}></img>}
                         </div>
@@ -107,7 +109,7 @@ const NavBar = () => {
 
                     <li className={isMenuClosed ? 'li--closed' : ''} onMouseEnter={() => setIsHoveredExperis(true)} onMouseLeave={() => setIsHoveredExperis(false)} >
                         <div className='navbar__container'>
-                            <a href='#contact' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>CONTACTO</a>
+                            <a href='#contact' className={`navbar__listitem navbar__listitem--urderline ${isMenuClosed ? 'navbar__listitem--closed' : ''}`} onClick={handleLinkClick}>Contacto</a>
 
                             {isHoveredExperis && <img className="navbar__listitemsub" src={heartIcon}></img>}
                         </div>
