@@ -51,7 +51,7 @@ const Home = ({ sendContextThemeToParent }) => {
                 </div>
                 <div className='profile'>
                     <div className='profile__paragraph'>
-                        <h1>!Hola! Soy <span>Diana.</span></h1>
+                        <h1>!Hola! Soy <span>Caro.</span></h1>
                         <h2>&lt;Full Stack Developer Jr./&gt;</h2> 
                         {/* <h2></h2>  */}
                         <h3>con pasión por el Frontend ❤️</h3>
